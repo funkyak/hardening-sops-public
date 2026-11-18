@@ -1,0 +1,14 @@
+/* Fit Mermaid diagrams to the note: no sideways scrolling, and no diagram taller
+   than most of the window. The SVG keeps its shape and is scaled down to fit. */
+.markdown-rendered .mermaid,
+.markdown-source-view .mermaid {
+  overflow: hidden !important;
+  text-align: center;
+}
+
+.markdown-rendered .mermaid svg,
+.markdown-source-view .mermaid svg {
+  max-width: 100% !important;
+  max-height: 80vh !important;
+  height: auto !important;
+}
